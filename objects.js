@@ -1,7 +1,7 @@
 var playlist = {artistName: "songTitles"};
 
 function updatePlaylist(playlist, artistName, songTitles) {
-  return playlist[]
+  return playlist[artistName]
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
