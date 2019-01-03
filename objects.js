@@ -1,9 +1,22 @@
-function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
-  obj[key] = value
- 
-  return obj
+var playlist = {};
+
+function updateObjectWithKeyAndValue(object, key, value) {
+  return Object.assign({}, object, {[key]: value});
 }
- 
-const recipe = { eggs: 3 }
- 
-destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
+
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  object[key] = value;
+  return object;
+}
+
+function deleteFromObjectByKey(object, key) {
+  var newObj = Object.assign({}, object);
+  delete newObj[key];
+  return newObj;
+}
+
+
+function destructivelyDeleteFromObjectByKey(object, key) {
+  delete object[key];
+  return object;
+}
