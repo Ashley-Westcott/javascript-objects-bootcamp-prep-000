@@ -7,8 +7,3 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
 const recipe = { eggs: 3 }
  
 destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
-// returns { eggs: 3, flour: '3 cups' }
- 
-// but also:
- 
-recipe // { eggs: 3, flour: '3 cups' }
